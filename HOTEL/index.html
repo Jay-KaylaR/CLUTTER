@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kenyan Coast Tours - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Kenyan Coast Tours</h1>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="content">
+  <h2>Welcome!</h2>
+  <p>Explore Kenya's stunning coastal destinations with us.</p>
+
+  <h3>User Login</h3>
+  <form id="loginForm">
+    <input type="text" id="loginUsername" placeholder="Username" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Kenyan Coast Tours</p>
+</footer>
+
+<script>
+document.getElementById("loginForm").onsubmit = function(e) {
+  e.preventDefault();
+  const username = document.getElementById("loginUsername").value;
+  const password = document.getElementById("loginPassword").value;
+  const storedPass = localStorage.getItem(username);
+  if (storedPass && storedPass === password) {
+    alert("Login successful!");
+  } else {
+    alert("Invalid username or password.");
+  }
+};
+</script>
+</body>
+</html>
