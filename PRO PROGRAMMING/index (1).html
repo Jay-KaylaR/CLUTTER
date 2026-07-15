@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Industry</title>
+
+    <!-- LINK TO EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MAIN DIV CONTAINER -->
+<div class="container">
+
+    <!-- HEADER SECTION -->
+    <h1>Clean Water Industry</h1>
+
+    <!-- PARAGRAPH WITH STYLING -->
+    <p>Providing safe and clean water for everyone.</p>
+    <p class="highlight">Water is life — conserve it!</p>
+
+    <!-- HYPERLINK -->
+    <p>Learn more at 
+        <a href="https://www.unwater.org" target="_blank">UN Water Organization</a>
+    </p>
+
+    <!-- IMAGE SECTION -->
+    <h2>Water Supply</h2>
+    <img src="https://via.placeholder.com/400x200" alt="Water Industry Image">
+
+    <!-- TABLE SECTION -->
+    <h2>Water Usage Table</h2>
+    <table>
+        <tr>
+            <th>Sector</th>
+            <th>Usage (%)</th>
+        </tr>
+        <tr>
+            <td>Agriculture</td>
+            <td>70%</td>
+        </tr>
+        <tr>
+            <td>Industry</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>Domestic</td>
+            <td>10%</td>
+        </tr>
+    </table>
+
+    <!-- FORM SECTION -->
+    <h2>Water Service Registration</h2>
+    <form id="waterForm">
+        <label>Name:</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email"><br><br>
+
+        <label>Location:</label><br>
+        <input type="text" id="location"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- AUDIO SECTION -->
+    <h2>Water Sound</h2>
+    <audio controls>
+        <source src="water.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <!-- VIDEO SECTION -->
+    <h2>Water Treatment Process</h2>
+    <video width="320" height="240" controls>
+        <source src="water-video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <!-- BUTTON FOR JAVASCRIPT -->
+    <br><br>
+    <button onclick="showMessage()">Click for Water Tip</button>
+
+</div>
+
+<!-- LINK TO EXTERNAL JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
